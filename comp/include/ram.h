@@ -1,5 +1,10 @@
 #pragma once
+#include <iostream>
 
-int* ram(int nums[], int cords){
+int* write(int nums[], int cords){
+    return &nums[cords];
+}
+
+int* read(int nums[], int cords){
     return &nums[cords];
 }

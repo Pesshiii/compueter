@@ -2,9 +2,9 @@
 #include "ram.h"
 #include <iostream>
 
-void write(int nums[]){
+void input(int nums[]){
     for(int i = 0; i < sizeof(nums); ++i){
         std::cout << "Enter the num no_ " << i + 1 << std::endl;
-        std::cin >> *ram(nums, i);
+        std::cin >> *write(nums, i);
     }
 }
